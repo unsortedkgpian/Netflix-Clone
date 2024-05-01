@@ -22,10 +22,11 @@
 
 body{
     background-color: black;
+    color:white
 }
 .main{
     background-image: url("assets/images/bg.jpg") ;
-    height: 80vh;
+    height: 70vh;
     position: relative;
     background-position: center center;
     background-size:max(1200px, 100vw);
@@ -33,9 +34,9 @@ body{
 
 
 .main .box{
-    height: 80vh;
+    height: 70vh;
     width: 100%;
-    opacity: 0.44;
+    opacity: 0.7;
     background-color: black;
     position: absolute;
     top:0;
@@ -57,9 +58,14 @@ nav img{
     z-index: 10;
 }
 
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
 .hero{
     font-family: 'Netflix Font', sans-serif;
-    height: 100%;
+    height:calc(100% - 62px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,20 +73,143 @@ nav img{
     color: white;
     position: relative;
     gap: 23px;
+    padding:0 30px;
 }
 
 .hero> :first-child{
     font-size: 3rem;
     font-weight: 900;
+    text-align: center;
 }
 
 .hero> :nth-child(2){
     font-size: 1.5rem;
     font-weight: 400;
+    text-align: center;
 }
 .hero> :nth-child(3){
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.5;
+    text-align: center;
 }
 
+
+.separation{
+    height: 7px;
+    background-color: rgb(82, 82, 82);
+}
+
+
+.btn{
+    padding:3px 8px;
+    font-weight: 450;
+    color: white;
+    background-color: rgba(248,243,243,0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    
+    border-radius: 4px;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+.main input{
+    width: max(20vw, 180px);
+    padding: 7px 7px 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.2);
+    border: 1px solid rgb(102, 102, 102);;
+}
+.main input::placeholder {
+    color: white;
+  }
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    align-items: center;
+}
+
+.secImg{
+    position: relative;
+}
+
+.secImg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video{
+    position: absolute;
+    top: 51px;
+    right:0 ;
+}
+
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first > div :nth-child(2){
+    font-size: 24px; 
+}
+
+
+.faq{
+    background: black;
+    color: white;
+    padding: 34px;
+    
+}
+
+.faq h2{
+    text-align:center;
+    font-size: 48px;
+    
+}
+
+.faqbox:hover{
+    background-color: #414141;
+}
+
+.faqbox{
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    background-color: #2d2d2d;
+    justify-content: space-between;
+    padding: 34px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+
+}
